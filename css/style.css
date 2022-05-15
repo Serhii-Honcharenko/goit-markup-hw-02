@@ -1,33 +1,70 @@
 /* Primary color: #757575
 Second color: #212121
 Link, button color: #2196F3 */
-
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --link-button-color: #2196f3;
+}
+body {
+  background: #ffffff;
+  color: var(--primary-text-color);
+}
+.lstn {
+  list-style-type: none;
+}
 /* HEADER / Navigation / Logo / Menu / Contacts */
 .header {
 }
 .navigation {
 }
 .logo {
+  color: var(--link-button-color);
 }
 .logo-black {
+  color: #000000;
+}
+.logo-white {
+  color: #ffffff;
 }
 .menu {
 }
 .menu-item {
 }
+.menu-link {
+  color: var(--title-text-color);
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--link-button-color);
+}
+
 .contacts {
 }
 .contacts-item {
 }
-/* MAIN CONTENT / Hero / Advantages / Services / Team */
+.contacts-link {
+  color: #212121;
+}
+.contacts-link:hover,
+.contacts-link:focus {
+  color: var(--link-button-color);
+}
+.
+/* MAIN CONTENT INDEX.HTML / Hero / Advantages / Services / Team */
 .main {
 }
 /* Hero */
 .hero {
+  background-color: #2f303a;
 }
 .hero-title {
+  color: #ffffff;
 }
 .hero-button {
+  background-color: var(--link-button-color);
+  color: #ffffff;
+  cursor: pointer;
 }
 /* Advantages */
 .advantages {
@@ -38,14 +75,17 @@ Link, button color: #2196F3 */
 }
 .advantages-title {
 }
+.advantages-subtitle {
+  color: var(--title-text-color);
+}
 .advantages-text {
 }
-.advantages-subtitle {
-}
+
 /* Services */
 .services {
 }
 .services-title {
+  color: var(--title-text-color);
 }
 .services-list {
 }
@@ -55,17 +95,50 @@ Link, button color: #2196F3 */
 .team {
 }
 .team-title {
+  color: var(--title-text-color);
 }
 .team-list {
 }
 .team-item {
 }
 .team-subtitle {
+  color: var(--title-text-color);
 }
 .team-text {
 }
+/* MAIN CONTENT PORTFOLIO.HTML */
+.main-porfolio {
+}
+.button-list {
+}
+.button-item {
+}
+.button-portfolio {
+  background-color: #f5f4fa;
+  color: var(--title-text-color);
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+  background-color: var(--link-button-color);
+  color: #ffffff;
+  cursor: pointer;
+}
+.arcticle-portfolio {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-img {
+}
+.portfolio-title {
+  color: var(--title-text-color);
+}
+.portfolio-text {
+}
 /* FOOTER / Address / */
 .footer {
+  background: #2f303a;
 }
 .address {
 }
@@ -73,5 +146,13 @@ Link, button color: #2196F3 */
 }
 .address-item {
 }
-.address-street {
+.address-link {
+  color: var(--primary-text-color);
+}
+.address-text {
+  color: #ffffff;
+}
+.address-link:hover,
+.address-link:focus {
+  color: var(--link-button-color);
 }
